@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/base_app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/login_micro_app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/micro_commons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/micro_core" vcs="Git" />
+  </component>
+</project>
