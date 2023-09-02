@@ -9,10 +9,12 @@
       <excludeFolder url="file://$MODULE_DIR$/login_micro_app/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/login_micro_app/build" />
       <excludeFolder url="file://$MODULE_DIR$/login_micro_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/micro_core/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/micro_core/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/micro_core/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
-    <orderEntry type="library" name="Dart Packages" level="project" />
   </component>
 </module>
