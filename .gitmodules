@@ -1,3 +1,9 @@
 [submodule "base_app"]
 	path = base_app
 	url = https://github.com/vaanessamota/base_app.git
+[submodule "micro_core"]
+	path = micro_core
+	url = https://github.com/vaanessamota/micro_core.git
+[submodule "login_micro_app"]
+	path = login_micro_app
+	url = https://github.com/vaanessamota/login_micro_app.git
