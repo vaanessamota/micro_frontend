@@ -35,4 +35,19 @@ A arquitetura Microfrontend é adequada em cenários onde:
 obs: A adoção deve ser considerada com base nas necessidades específicas do projeto, para projetos menores ou simples, a complexidade inicial não justificaria a utilização desta arquitetura.
 
 
+Nesta arquitetura, temos 4 componentes principais: Base App, Core, Microapps e Microcommons.
 
+**Base App**
+- Responsável por inicializar a aplicação como um todo e todos os microfrontends.
+- Desconhece os detalhes de implementação do core e dos microapps.
+
+**Micro Core**
+- Micro core possui os contratos de inicialização do base app e dos microapps.
+- Possui os mecanismos necessários para o registro de rotas e navegação.
+
+**Micro App**
+- Um módulo do app, possui poucas responsabilidades e é onde fica a implementação das funcionalidades do app.
+- Desconhece outros microapps, e caso necessário, acessa funcionalidades compartilhadas através do micro-commons.
+
+**Micro Commons**
+- É o único módulo compartilhável, formenta outros microapps com funcionalidades reutilizáveis, como o DS da aplicação.
