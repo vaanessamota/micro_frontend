@@ -34,8 +34,12 @@ A arquitetura Microfrontend é adequada em cenários onde:
 
 obs: A adoção deve ser considerada com base nas necessidades específicas do projeto, para projetos menores ou simples, a complexidade inicial não justificaria a utilização desta arquitetura.
 
+**Componentes**
 
 Nesta arquitetura, temos 4 componentes principais: Base App, Core, Microapps e Microcommons.
+
+<img width="680" alt="Screenshot 2023-09-03 at 16 33 56" src="https://github.com/vaanessamota/micro_frontend/assets/20022113/35762df8-5c48-4911-9d1b-79d55d7e48da">
+
 
 **Base App**
 - Responsável por inicializar a aplicação como um todo e todos os microfrontends.
