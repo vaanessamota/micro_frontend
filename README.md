@@ -1,4 +1,4 @@
-# Visão Geral do Projeto Microfrontend Flutter
+# Visão Geral
 
 Este projeto é uma prova de conceito com o objetivo de implementar a arquitetura microfrontend utilizando o framework Flutter.
 
