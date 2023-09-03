@@ -55,3 +55,10 @@ Nesta arquitetura, temos 4 componentes principais: Base App, Core, Microapps e M
 
 **Micro Commons**
 - É o único módulo compartilhável, formenta outros microapps com funcionalidades reutilizáveis, como o DS da aplicação.
+
+
+Referências:
+
+[Toshi Ossada - Flutterando](https://blog.flutterando.com.br/micro-frontends-criando-aplicativos-mais-profissionais-com-o-modular-43eba2264dbe)
+
+[Deivid Willyam](https://github.com/DeividWillyan/Curso-Flutter-Advanced/tree/master)
