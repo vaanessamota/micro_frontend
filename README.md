@@ -1,64 +1,56 @@
-# Visão Geral
+# Microfrontend Architecture with Flutter
 
-Este projeto é uma prova de conceito com o objetivo de implementar a arquitetura microfrontend utilizando o framework Flutter.
+This project is a proof of concept for implementing the micro frontend architecture using the Flutter framework.
 
-A arquitetura microfrontend permite a criação de aplicativos móveis flexíveis, dividindo a aplicação em pequenos módulos independentes.
+## Overview
 
-Cada módulo, ou "microapp", é desenvolvido de maneira isolada, o que resulta em um alto grau de desacoplamento e manutenção eficiente.
+The micro frontend architecture allows for the creation of flexible mobile applications by dividing the application into small independent modules.
 
-**Principais benefícios:**
+Each module, or "microapp," is developed in isolation, resulting in a high degree of decoupling and efficient maintenance.
 
-- Modularidade: as funcionalidades são desenvolvidas de forma independentes
-- Escalabilidade: atualização e adição de módulos sem impactar o aplicativo como um todo.
-- Flexibilidade: utilize tecnologias diversas para diferentes partes da interface.
-- Performance: carregamento sob demanda para uma experiência de usuário ágil.
-- Gestão de Bugs e side-effects: com microapps independentes e desacoplados, dificilmente a correção de um bug ou
-alteração de alguma funcionalidade gerará side-effects.
+### Key Benefits
 
-**Pontos a serem considerados:**
+- **Modularity:** Functionalities are developed independently.
+- **Scalability:** Updates and addition of modules without impacting the overall application.
+- **Flexibility:** Use various technologies for different parts of the application.
+- **Performance:** On-demand dependencies loading for an agile user experience.
+- **Bug and Side-effect Management:** With independent and decoupled micro apps, fixing a bug or making changes to a feature is less likely to generate side-effects.
 
-- Complexidade inicial: configurar uma arquitetura Microfrontend pode ser complexo e desafiador.
-- Gerenciamento de estado: gerenciar estados compartilhado entre microfrontends se torna mais complexo.
-- Potencial para desempenho: se não for bem gerenciado, o carregamento sob demanda pode impactar o desempenho.
-- Padrões de comunicação: é necessário estabelecer padrões de comunicação entre microfrontends.
+### Points to Consider
 
-**Quando é adequado?**
+- **Initial Complexity:** Setting up a Microfrontend architecture can be complex and challenging.
+- **State Management:** Managing shared states between micro frontends becomes more complex.
+- **Potential for Performance Issues:** If not managed well, on-demand dependencies loading can impact performance.
+- **Communication Patterns:** It is necessary to establish communication patterns between microfrontends.
 
-A arquitetura Microfrontend é adequada em cenários onde:
+## When is it Suitable?
 
-- A aplicação é grande e complexa, o que dificulta a evolução e manutenção.
-- Equipes diferentes precisam trabalhar em partes diferentes da aplicação.
-- É necessário escalar ou adicionar novas funcionalidades de forma ágil, reduzindo os conflitos dentro do projeto.
-- A modularidade, desacopalamento e a reutilização de componentes são importantes.
-- A experiência do usuário e o desempenho são prioridades.
+The Microfrontend architecture is suitable in scenarios where:
 
-obs: A adoção deve ser considerada com base nas necessidades específicas do projeto, para projetos menores ou simples, a complexidade inicial não justificaria a utilização desta arquitetura.
+- The application is large and complex, which makes the project evolution and maintenance difficult.
+- Different teams need to work on different parts of the application.
+- Agile scaling or continuous addition of new features is required
+- Modularity, decoupling, and component reuse are important.
+- User experience and performance are priorities.
 
-**Componentes**
+**Note:** Adoption should be considered based on the specific project needs. For smaller or simpler projects, the initial complexity may not justify the use of this architecture.
 
-Nesta arquitetura, temos 4 componentes principais: Base App, Core, Microapps e Microcommons.
+## Components
+
+In this architecture, we have four main components:
 
 <img width="680" alt="Screenshot 2023-09-03 at 16 33 56" src="https://github.com/vaanessamota/micro_frontend/assets/20022113/35762df8-5c48-4911-9d1b-79d55d7e48da">
 
 
-**Base App**
-- Responsável por inicializar a aplicação como um todo e todos os microfrontends.
-- Desconhece os detalhes de implementação do core e dos microapps.
+- **Base App:** Responsible for initializing the entire application and all micro frontends. Unaware of the implementation details of the core module and microapps.
 
-**Micro Core**
-- Micro core possui os contratos de inicialização do base app e dos microapps.
-- Possui os mecanismos necessários para o registro de rotas e navegação.
+- **Micro Core:** Micro Core has the initialization contracts of the base app and micro apps. It has the necessary mechanisms for route registration and navigation.
 
-**Micro App**
-- Um módulo do app, possui poucas responsabilidades e é onde fica a implementação das funcionalidades do app.
-- Desconhece outros microapps, e caso necessário, acessa funcionalidades compartilhadas através do micro-commons.
+- **Micro App:** A module of the app, responsible for a few functionalities and where the implementation of the app's features resides. Unaware of other microapps, and if necessary, accesses shared functionalities through micro-commons.
 
-**Micro Commons**
-- É o único módulo compartilhável, formenta outros microapps com funcionalidades reutilizáveis, como o DS da aplicação.
+- **Micro Commons:** The shareable module, provides other microapps with reusable functionalities, such as the application's design system.
 
+## References
 
-Referências:
-
-[Toshi Ossada - Flutterando](https://blog.flutterando.com.br/micro-frontends-criando-aplicativos-mais-profissionais-com-o-modular-43eba2264dbe)
-
-[Deivid Willyam](https://github.com/DeividWillyan/Curso-Flutter-Advanced/tree/master)
+- [Toshi Ossada - Flutterando](https://blog.flutterando.com.br/micro-frontends-criando-aplicativos-mais-profissionais-com-o-modular-43eba2264dbe)
+- [Deivid Willyam](https://github.com/DeividWillyan/Curso-Flutter-Advanced/tree/master)
